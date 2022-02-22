@@ -3,26 +3,109 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		374F9F9927C0B2F30009268E /* ScooterAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374F9F9827C0B2F30009268E /* ScooterAppApp.swift */; };
-		374F9F9B27C0B2F30009268E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374F9F9A27C0B2F30009268E /* ContentView.swift */; };
 		374F9F9D27C0B2F50009268E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 374F9F9C27C0B2F50009268E /* Assets.xcassets */; };
 		374F9FA027C0B2F50009268E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 374F9F9F27C0B2F50009268E /* Preview Assets.xcassets */; };
+		374F9FA727C0B8F00009268E /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374F9FA627C0B8F00009268E /* MapView.swift */; };
+		374F9FAA27C0C01C0009268E /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374F9FA927C0C01C0009268E /* Vehicle.swift */; };
+		374F9FAC27C0C22F0009268E /* VehicleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374F9FAB27C0C22F0009268E /* VehicleView.swift */; };
+		374F9FAE27C0C3010009268E /* VehicleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374F9FAD27C0C3010009268E /* VehicleViewModel.swift */; };
+		374F9FB127C0C31E0009268E /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374F9FB027C0C31E0009268E /* MapViewModel.swift */; };
+		374F9FB427C22CC70009268E /* MakeSelected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374F9FB327C22CC70009268E /* MakeSelected.swift */; };
+		374F9FB827C3D0E00009268E /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374F9FB727C3D0E00009268E /* Routable.swift */; };
+		374F9FBA27C3D0F50009268E /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374F9FB927C3D0F50009268E /* APIRouter.swift */; };
+		374F9FBD27C3D10D0009268E /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374F9FBC27C3D10D0009268E /* Task.swift */; };
+		374F9FBF27C3D11F0009268E /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374F9FBE27C3D11F0009268E /* APIResponse.swift */; };
+		374F9FC127C3D1300009268E /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374F9FC027C3D1300009268E /* APIError.swift */; };
+		374F9FC327C3D13C0009268E /* ParametersEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374F9FC227C3D13C0009268E /* ParametersEncoding.swift */; };
+		374F9FC527C3D14F0009268E /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374F9FC427C3D14F0009268E /* HTTPMethod.swift */; };
+		374F9FC827C3D16A0009268E /* Encodable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374F9FC727C3D16A0009268E /* Encodable+Extension.swift */; };
+		374F9FCA27C3D17B0009268E /* URLComponents+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374F9FC927C3D17B0009268E /* URLComponents+Extension.swift */; };
+		374F9FCC27C3D18C0009268E /* URLRequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374F9FCB27C3D18C0009268E /* URLRequestAPI.swift */; };
+		374F9FCF27C3D1A30009268E /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374F9FCE27C3D1A30009268E /* APIClient.swift */; };
+		374F9FD227C3D3450009268E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374F9FD127C3D3450009268E /* Constants.swift */; };
+		374F9FD427C4171D0009268E /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374F9FD327C4171D0009268E /* ResponseModel.swift */; };
+		37660A4A27C426C700DA8AAD /* MapViewLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37660A4927C426C700DA8AAD /* MapViewLocationManager.swift */; };
+		37660A5227C50BE000DA8AAD /* ScooterAppUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37660A5127C50BE000DA8AAD /* ScooterAppUnitTests.swift */; };
+		37660A5A27C50D6400DA8AAD /* MockNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37660A5927C50D6400DA8AAD /* MockNetwork.swift */; };
+		37660A5C27C573D100DA8AAD /* vehicles.json in Resources */ = {isa = PBXBuildFile; fileRef = 37660A5B27C573D100DA8AAD /* vehicles.json */; };
+		37660A5E27C5745700DA8AAD /* VehiclesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37660A5D27C5745700DA8AAD /* VehiclesData.swift */; };
+		37660A6627C586FC00DA8AAD /* ScooterAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37660A6527C586FC00DA8AAD /* ScooterAppUITests.swift */; };
+		37660A6827C586FC00DA8AAD /* ScooterAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37660A6727C586FC00DA8AAD /* ScooterAppUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		37660A5327C50BE000DA8AAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 374F9F8D27C0B2F30009268E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 374F9F9427C0B2F30009268E;
+			remoteInfo = ScooterApp;
+		};
+		37660A6927C586FC00DA8AAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 374F9F8D27C0B2F30009268E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 374F9F9427C0B2F30009268E;
+			remoteInfo = ScooterApp;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		374F9F9527C0B2F30009268E /* ScooterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScooterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		374F9F9827C0B2F30009268E /* ScooterAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScooterAppApp.swift; sourceTree = "<group>"; };
-		374F9F9A27C0B2F30009268E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		374F9F9C27C0B2F50009268E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		374F9F9F27C0B2F50009268E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		374F9FA627C0B8F00009268E /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		374F9FA927C0C01C0009268E /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		374F9FAB27C0C22F0009268E /* VehicleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleView.swift; sourceTree = "<group>"; };
+		374F9FAD27C0C3010009268E /* VehicleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleViewModel.swift; sourceTree = "<group>"; };
+		374F9FB027C0C31E0009268E /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		374F9FB327C22CC70009268E /* MakeSelected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeSelected.swift; sourceTree = "<group>"; };
+		374F9FB727C3D0E00009268E /* Routable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
+		374F9FB927C3D0F50009268E /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		374F9FBC27C3D10D0009268E /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		374F9FBE27C3D11F0009268E /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		374F9FC027C3D1300009268E /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		374F9FC227C3D13C0009268E /* ParametersEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParametersEncoding.swift; sourceTree = "<group>"; };
+		374F9FC427C3D14F0009268E /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		374F9FC727C3D16A0009268E /* Encodable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Extension.swift"; sourceTree = "<group>"; };
+		374F9FC927C3D17B0009268E /* URLComponents+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLComponents+Extension.swift"; sourceTree = "<group>"; };
+		374F9FCB27C3D18C0009268E /* URLRequestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestAPI.swift; sourceTree = "<group>"; };
+		374F9FCE27C3D1A30009268E /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		374F9FD127C3D3450009268E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		374F9FD327C4171D0009268E /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
+		37660A4927C426C700DA8AAD /* MapViewLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewLocationManager.swift; sourceTree = "<group>"; };
+		37660A4F27C50BE000DA8AAD /* ScooterAppUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScooterAppUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		37660A5127C50BE000DA8AAD /* ScooterAppUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScooterAppUnitTests.swift; sourceTree = "<group>"; };
+		37660A5927C50D6400DA8AAD /* MockNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetwork.swift; sourceTree = "<group>"; };
+		37660A5B27C573D100DA8AAD /* vehicles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = vehicles.json; sourceTree = "<group>"; };
+		37660A5D27C5745700DA8AAD /* VehiclesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesData.swift; sourceTree = "<group>"; };
+		37660A6327C586FC00DA8AAD /* ScooterAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScooterAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		37660A6527C586FC00DA8AAD /* ScooterAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScooterAppUITests.swift; sourceTree = "<group>"; };
+		37660A6727C586FC00DA8AAD /* ScooterAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScooterAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		374F9F9227C0B2F30009268E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37660A4C27C50BE000DA8AAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37660A6027C586FC00DA8AAD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,6 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				374F9F9727C0B2F30009268E /* ScooterApp */,
+				37660A5027C50BE000DA8AAD /* ScooterAppUnitTests */,
+				37660A6427C586FC00DA8AAD /* ScooterAppUITests */,
 				374F9F9627C0B2F30009268E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +129,8 @@
 			isa = PBXGroup;
 			children = (
 				374F9F9527C0B2F30009268E /* ScooterApp.app */,
+				37660A4F27C50BE000DA8AAD /* ScooterAppUnitTests.xctest */,
+				37660A6327C586FC00DA8AAD /* ScooterAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,9 +139,14 @@
 			isa = PBXGroup;
 			children = (
 				374F9F9827C0B2F30009268E /* ScooterAppApp.swift */,
-				374F9F9A27C0B2F30009268E /* ContentView.swift */,
+				374F9FA827C0C0100009268E /* Models */,
+				374F9FB227C0C32C0009268E /* MapView */,
+				374F9FAF27C0C30C0009268E /* VehicleView */,
+				374F9FB527C3D0C90009268E /* Network */,
+				374F9FD027C3D33B0009268E /* Helper */,
 				374F9F9C27C0B2F50009268E /* Assets.xcassets */,
 				374F9F9E27C0B2F50009268E /* Preview Content */,
+				374F9FB327C22CC70009268E /* MakeSelected.swift */,
 			);
 			path = ScooterApp;
 			sourceTree = "<group>";
@@ -63,8 +155,122 @@
 			isa = PBXGroup;
 			children = (
 				374F9F9F27C0B2F50009268E /* Preview Assets.xcassets */,
+				37660A5D27C5745700DA8AAD /* VehiclesData.swift */,
+				37660A5B27C573D100DA8AAD /* vehicles.json */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		374F9FA827C0C0100009268E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				374F9FA927C0C01C0009268E /* Vehicle.swift */,
+				374F9FD327C4171D0009268E /* ResponseModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		374F9FAF27C0C30C0009268E /* VehicleView */ = {
+			isa = PBXGroup;
+			children = (
+				374F9FAB27C0C22F0009268E /* VehicleView.swift */,
+				374F9FAD27C0C3010009268E /* VehicleViewModel.swift */,
+			);
+			path = VehicleView;
+			sourceTree = "<group>";
+		};
+		374F9FB227C0C32C0009268E /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				374F9FA627C0B8F00009268E /* MapView.swift */,
+				374F9FB027C0C31E0009268E /* MapViewModel.swift */,
+			);
+			path = MapView;
+			sourceTree = "<group>";
+		};
+		374F9FB527C3D0C90009268E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				374F9FB627C3D0D10009268E /* Protocols */,
+				374F9FBB27C3D0FE0009268E /* Enums */,
+				374F9FC627C3D1570009268E /* Extensions */,
+				374F9FCD27C3D1950009268E /* Client */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		374F9FB627C3D0D10009268E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				374F9FB727C3D0E00009268E /* Routable.swift */,
+				374F9FB927C3D0F50009268E /* APIRouter.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		374F9FBB27C3D0FE0009268E /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				374F9FBC27C3D10D0009268E /* Task.swift */,
+				374F9FBE27C3D11F0009268E /* APIResponse.swift */,
+				374F9FC027C3D1300009268E /* APIError.swift */,
+				374F9FC227C3D13C0009268E /* ParametersEncoding.swift */,
+				374F9FC427C3D14F0009268E /* HTTPMethod.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		374F9FC627C3D1570009268E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				374F9FC727C3D16A0009268E /* Encodable+Extension.swift */,
+				374F9FC927C3D17B0009268E /* URLComponents+Extension.swift */,
+				374F9FCB27C3D18C0009268E /* URLRequestAPI.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		374F9FCD27C3D1950009268E /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				374F9FCE27C3D1A30009268E /* APIClient.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		374F9FD027C3D33B0009268E /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				374F9FD127C3D3450009268E /* Constants.swift */,
+				37660A4927C426C700DA8AAD /* MapViewLocationManager.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		37660A5027C50BE000DA8AAD /* ScooterAppUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				37660A5827C50D5800DA8AAD /* Mocks */,
+				37660A5127C50BE000DA8AAD /* ScooterAppUnitTests.swift */,
+			);
+			path = ScooterAppUnitTests;
+			sourceTree = "<group>";
+		};
+		37660A5827C50D5800DA8AAD /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				37660A5927C50D6400DA8AAD /* MockNetwork.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		37660A6427C586FC00DA8AAD /* ScooterAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				37660A6527C586FC00DA8AAD /* ScooterAppUITests.swift */,
+				37660A6727C586FC00DA8AAD /* ScooterAppUITestsLaunchTests.swift */,
+			);
+			path = ScooterAppUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +293,42 @@
 			productReference = 374F9F9527C0B2F30009268E /* ScooterApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		37660A4E27C50BE000DA8AAD /* ScooterAppUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37660A5727C50BE000DA8AAD /* Build configuration list for PBXNativeTarget "ScooterAppUnitTests" */;
+			buildPhases = (
+				37660A4B27C50BE000DA8AAD /* Sources */,
+				37660A4C27C50BE000DA8AAD /* Frameworks */,
+				37660A4D27C50BE000DA8AAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				37660A5427C50BE000DA8AAD /* PBXTargetDependency */,
+			);
+			name = ScooterAppUnitTests;
+			productName = ScooterAppUnitTests;
+			productReference = 37660A4F27C50BE000DA8AAD /* ScooterAppUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		37660A6227C586FC00DA8AAD /* ScooterAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37660A6B27C586FC00DA8AAD /* Build configuration list for PBXNativeTarget "ScooterAppUITests" */;
+			buildPhases = (
+				37660A5F27C586FC00DA8AAD /* Sources */,
+				37660A6027C586FC00DA8AAD /* Frameworks */,
+				37660A6127C586FC00DA8AAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				37660A6A27C586FC00DA8AAD /* PBXTargetDependency */,
+			);
+			name = ScooterAppUITests;
+			productName = ScooterAppUITests;
+			productReference = 37660A6327C586FC00DA8AAD /* ScooterAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -100,10 +342,18 @@
 					374F9F9427C0B2F30009268E = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
+					37660A4E27C50BE000DA8AAD = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 374F9F9427C0B2F30009268E;
+					};
+					37660A6227C586FC00DA8AAD = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 374F9F9427C0B2F30009268E;
+					};
 				};
 			};
 			buildConfigurationList = 374F9F9027C0B2F30009268E /* Build configuration list for PBXProject "ScooterApp" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -116,6 +366,8 @@
 			projectRoot = "";
 			targets = (
 				374F9F9427C0B2F30009268E /* ScooterApp */,
+				37660A4E27C50BE000DA8AAD /* ScooterAppUnitTests */,
+				37660A6227C586FC00DA8AAD /* ScooterAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -126,7 +378,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				374F9FA027C0B2F50009268E /* Preview Assets.xcassets in Resources */,
+				37660A5C27C573D100DA8AAD /* vehicles.json in Resources */,
 				374F9F9D27C0B2F50009268E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37660A4D27C50BE000DA8AAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37660A6127C586FC00DA8AAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,12 +404,63 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				374F9F9B27C0B2F30009268E /* ContentView.swift in Sources */,
+				374F9FAA27C0C01C0009268E /* Vehicle.swift in Sources */,
+				374F9FD227C3D3450009268E /* Constants.swift in Sources */,
+				374F9FBA27C3D0F50009268E /* APIRouter.swift in Sources */,
+				374F9FC527C3D14F0009268E /* HTTPMethod.swift in Sources */,
+				374F9FBD27C3D10D0009268E /* Task.swift in Sources */,
+				374F9FAE27C0C3010009268E /* VehicleViewModel.swift in Sources */,
+				374F9FCC27C3D18C0009268E /* URLRequestAPI.swift in Sources */,
+				37660A4A27C426C700DA8AAD /* MapViewLocationManager.swift in Sources */,
+				374F9FA727C0B8F00009268E /* MapView.swift in Sources */,
+				374F9FC127C3D1300009268E /* APIError.swift in Sources */,
+				374F9FBF27C3D11F0009268E /* APIResponse.swift in Sources */,
+				374F9FC827C3D16A0009268E /* Encodable+Extension.swift in Sources */,
+				374F9FCA27C3D17B0009268E /* URLComponents+Extension.swift in Sources */,
+				374F9FB127C0C31E0009268E /* MapViewModel.swift in Sources */,
+				374F9FC327C3D13C0009268E /* ParametersEncoding.swift in Sources */,
+				374F9FAC27C0C22F0009268E /* VehicleView.swift in Sources */,
+				374F9FB427C22CC70009268E /* MakeSelected.swift in Sources */,
 				374F9F9927C0B2F30009268E /* ScooterAppApp.swift in Sources */,
+				37660A5E27C5745700DA8AAD /* VehiclesData.swift in Sources */,
+				374F9FB827C3D0E00009268E /* Routable.swift in Sources */,
+				374F9FD427C4171D0009268E /* ResponseModel.swift in Sources */,
+				374F9FCF27C3D1A30009268E /* APIClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37660A4B27C50BE000DA8AAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37660A5227C50BE000DA8AAD /* ScooterAppUnitTests.swift in Sources */,
+				37660A5A27C50D6400DA8AAD /* MockNetwork.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37660A5F27C586FC00DA8AAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37660A6827C586FC00DA8AAD /* ScooterAppUITestsLaunchTests.swift in Sources */,
+				37660A6627C586FC00DA8AAD /* ScooterAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		37660A5427C50BE000DA8AAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 374F9F9427C0B2F30009268E /* ScooterApp */;
+			targetProxy = 37660A5327C50BE000DA8AAD /* PBXContainerItemProxy */;
+		};
+		37660A6A27C586FC00DA8AAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 374F9F9427C0B2F30009268E /* ScooterApp */;
+			targetProxy = 37660A6927C586FC00DA8AAD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		374F9FA127C0B2F50009268E /* Debug */ = {
@@ -272,6 +590,7 @@
 				DEVELOPMENT_TEAM = 2CCVQM44H5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "ScooterApp wants to use your location info to show the closest vehicle to you.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -286,7 +605,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -301,6 +620,7 @@
 				DEVELOPMENT_TEAM = 2CCVQM44H5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "ScooterApp wants to use your location info to show the closest vehicle to you.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -315,7 +635,77 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		37660A5527C50BE000DA8AAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2CCVQM44H5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ugureratalar.ScooterAppUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScooterApp.app/ScooterApp";
+			};
+			name = Debug;
+		};
+		37660A5627C50BE000DA8AAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2CCVQM44H5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ugureratalar.ScooterAppUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScooterApp.app/ScooterApp";
+			};
+			name = Release;
+		};
+		37660A6C27C586FC00DA8AAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2CCVQM44H5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ugureratalar.ScooterAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ScooterApp;
+			};
+			name = Debug;
+		};
+		37660A6D27C586FC00DA8AAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2CCVQM44H5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ugureratalar.ScooterAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ScooterApp;
 			};
 			name = Release;
 		};
@@ -336,6 +726,24 @@
 			buildConfigurations = (
 				374F9FA427C0B2F50009268E /* Debug */,
 				374F9FA527C0B2F50009268E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37660A5727C50BE000DA8AAD /* Build configuration list for PBXNativeTarget "ScooterAppUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37660A5527C50BE000DA8AAD /* Debug */,
+				37660A5627C50BE000DA8AAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37660A6B27C586FC00DA8AAD /* Build configuration list for PBXNativeTarget "ScooterAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37660A6C27C586FC00DA8AAD /* Debug */,
+				37660A6D27C586FC00DA8AAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

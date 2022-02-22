@@ -11,7 +11,7 @@ import SwiftUI
 struct ScooterAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MapView()
         }
     }
 }

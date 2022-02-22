@@ -1,0 +1,51 @@
+{
+	"data": {
+		"current": [
+			{
+				"id": "6348dfa0-1b20-40ed-98e9-fe9e232b6105",
+				"vehicleId": "8ece0495-bef0-4eac-a58e-dede2bf975a3",
+				"hardwareId": "868446031763952",
+				"zoneId": "BERLIN",
+				"resolution": "CLAIMED",
+				"resolvedBy": "5VRiXTOvRWbWfAlIKDv10HrE8LJ2",
+				"resolvedAt": "2019-10-10T06:35:21.153Z",
+				"battery": 91,
+				"state": "ACTIVE",
+				"model": "AB",
+				"fleetbirdId": 118160,
+				"latitude": 52.506731,
+				"longitude": 13.289618
+			},
+			{
+				"id": "9a1d5414-0cb3-4e6a-a147-a8f9920443bc",
+				"vehicleId": "a7496787-0e7d-40da-ab4a-e65a9d184a89",
+				"hardwareId": "868446031698182",
+				"zoneId": "BERLIN",
+				"resolution": "NOT_FOUND",
+				"resolvedBy": "KmOOdbjxxxWwnbFCLZXdtGLQPZ92",
+				"resolvedAt": "2019-10-10T09:42:14.370Z",
+				"battery": 14,
+				"state": "LOW_BATTERY",
+				"model": "AB",
+				"fleetbirdId": 118070,
+				"latitude": 52.472968,
+				"longitude": 13.442552
+			},
+			{
+				"id": "ff895c70-f4fb-4e66-a486-85a59d4e0357",
+				"vehicleId": "dba2efdb-d4b7-49cc-a36e-ef7863994c88",
+				"hardwareId": "868446035977681",
+				"zoneId": "BERLIN",
+				"resolution": "OTHER",
+				"resolvedBy": "Prqn30X2ktOk0KeS2ZbgwiIJNEn2",
+				"resolvedAt": "2019-10-10T05:01:16.634Z",
+				"battery": 68,
+				"state": "LOST",
+				"model": "AB",
+				"fleetbirdId": 118740,
+				"latitude": 52.51988,
+				"longitude": 13.351486
+			}
+		]
+	}
+}
